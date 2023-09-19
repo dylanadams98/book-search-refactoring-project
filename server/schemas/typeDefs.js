@@ -34,6 +34,8 @@ input bookInput {
 
 type Query {
   me: User
+  users: [User]
+  user(username: String!): User # Add this line
 }
 
 type Mutation {
